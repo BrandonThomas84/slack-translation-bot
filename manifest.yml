@@ -1,0 +1,33 @@
+display_information:
+  name: Translation Bot
+  description: A bot to translate messages between Ukrainian and English.
+  background_color: "#4A154B"
+
+features:
+  bot_user:
+    display_name: Translation Bot
+    always_online: true
+
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - chat:write.public
+      - channels:history
+      - im:history
+      - commands
+
+settings:
+  interactivity:
+    is_enabled: true
+    request_url: https://your-server-url/slack/events
+
+  event_subscriptions:
+    request_url: https://your-server-url/slack/events
+    bot_events:
+      - message.channels
+      - message.im
+
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
