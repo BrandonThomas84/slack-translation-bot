@@ -17,6 +17,13 @@ The first time you setup the application the order of operations is a bit out of
 
 You can then run the `expose ngrok` command to give you a URL that can be added to the Manifest file for the Slack App (change `https://your-server-url/` to the ngrok URL). This will allow you to test the application in a live environment.
 
+Then you can [create your Slack app](https://api.slack.com/apps) in the Slack API console. 
+
+1. Click on `Create an app`
+2. Select `From an app manifest`
+3. Select the workspace you want to develop your app in
+4. {TODO: GET APPROVAL TO MOVE FURTHER}
+
 ### Setup
 
 Run the following command to setup your application. This will install all the dependencies.
